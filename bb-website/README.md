@@ -1,6 +1,10 @@
 # Getting Setup
 
-Ensure that you have the latest versions of Node.js and Yarn. 
+Ensure that you have the latest versions of Node.js and Yarn. Then clone the repository onto your local machine and use 
+whichever code editor your would like. 
+
+Run `yarn` to install any initial dependencies. To see an instance of the website, run `yarn start` in the project folder and 
+open http://localhost:3000 in the browser. You should see the website loaded with any progress you've made/
 
 ## Available Scripts
 
