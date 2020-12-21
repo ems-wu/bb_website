@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ensure that you have the latest versions of Node.js and Yarn. 
 
 ## Available Scripts
 
