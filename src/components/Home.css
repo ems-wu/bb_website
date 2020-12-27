@@ -1,0 +1,10 @@
+.welcome {
+    background-color: rgb(190, 154, 154);
+    background-size: cover;
+    line-height: 1.8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
