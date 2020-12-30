@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Header/Navbar';
+import Navbar from './components/Navigation/Navbar';
 import Home from './pages/Home';
 import Join from './pages/Join';
 import Team from './pages/Team';
@@ -11,7 +11,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Navbar />
-            <div className="container mt-2" style={{ marginTop: 40 }}>
+            <div>
                 <Switch>
                     <Route exact path="/">
                         <Home />

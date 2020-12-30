@@ -1,10 +1,9 @@
 .welcome {
-    background-color: rgb(190, 154, 154);
-    background-size: cover;
+    background-color: rgb(175, 217, 228);
     line-height: 1.8;
-    height: 100vh;
+    height: 300vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}

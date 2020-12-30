@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Toolbar from '../../components/Header/Toolbar';
-import SideDrawer from '../../components/Header/Sidebar';
-import Backdrop from '../../components/Header/Backdrop';
+import Toolbar from '../../components/Navigation/Toolbar';
+import SideDrawer from '../../components/Navigation/Sidebar';
+import Backdrop from '../../components/Navigation/Backdrop';
 
 class Navbar extends Component {
     state = {
