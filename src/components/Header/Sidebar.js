@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../styles/Sidebar.css';
 
 const sideDrawer = props => {   
@@ -8,16 +9,35 @@ const sideDrawer = props => {
     }
 
     return (
-        <nav className = {drawerClasses}>
-            <ul>
-                <li><a href="/Home">HOME</a></li>
-                <li><a class="links-hidden" href="#">E-BOARD</a></li>
-                <li><a class="links-hidden" href="#">TECH TEAM</a></li>
-                <li><a class="links-hidden" href="#">AMBASSADORS</a></li>
-                <li><a href="/">JOIN US!</a></li>
-                <li><a href="/">CONTACT</a></li>
-            </ul> 
-        </nav>
+    <nav className = {drawerClasses}>
+        <ul>
+            <li>
+                <NavLink to="/" exact>
+                    HOME
+                </NavLink>                    
+            </li>
+            <li>
+                <NavLink to="/about">
+                    ABOUT
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/our-team">
+                    OUR TEAM
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/join">
+                    JOIN US!
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/contact">
+                    CONTACT
+                </NavLink>
+            </li>
+        </ul> 
+    </nav>
     );
 };
 

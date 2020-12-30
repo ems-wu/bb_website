@@ -2,16 +2,16 @@ import React from 'react'
 
 import '../styles/Home.css'
 
-const Home = () => {
+const About = () => {
     return (
         <>
         <main>
             <section className="welcome">
-                Home Page
+                About Us Page
             </section>
         </main>
         </>
     )
 }
 
-export default Home
+export default About

@@ -90,3 +90,7 @@
     font-size: 10px;
     width: fit-content;
 }
+
+.is-active {
+    font-size: 25px;
+}
