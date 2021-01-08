@@ -1,5 +1,4 @@
 import React from 'react'
-import Home_Header from '../components/Header/Home_Header'
 
 import '../styles/Home.css'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/DrawerToggleButton.css';
+import '../../styles/Sidebar.css';
 import { FaAlignLeft } from 'react-icons/fa';
 
 const drawerToggleButton = props => (
