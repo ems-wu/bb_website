@@ -25,7 +25,7 @@ function MainContent() {
     <main className={classes.fullWidth}>
       <div className={classes.toolbar} />
       <div className={classes.title}>
-        <Typography variant='h6'>Welcome to Becoming Businesswomen!</Typography>
+        <Typography variant='h6'>Who Are We?</Typography>
       </div>
       <div className={classes.content}>
         <Typography paragraph>
@@ -33,7 +33,15 @@ function MainContent() {
 
         </Typography>
       </div>
-      
+      <div className={classes.title}>
+        <Typography variant='h6'>Our Focuses</Typography>
+      </div>
+      <div className={classes.content}>
+        <Typography paragraph>
+        We are actively collecting resources for other areas of Business that members may be interested, such as Marketing, Administrative, Data Science, Entrepreneurship, etc. If you have any suggestions, feel free to submit them!
+        </Typography>
+      </div>
+    
     </main>
   );
 }

@@ -4,6 +4,7 @@ import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
 import Cards from './Cards';
+import Tools from './Tools';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <MainContent />
         <Cards />
+        <Tools />
         <Footer />
         <a
           className="App-link"

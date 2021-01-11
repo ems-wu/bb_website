@@ -26,12 +26,12 @@ function Header() {
   const classes = useStyles();
 
   return (
-    <AppBar position='fixed' className={classes.appBar}>
+    <AppBar position='fixed' style = {{backgroundColor: "#E9AFA3"}} className={classes.appBar}>
       <Toolbar>
         <IconButton
           edge='start'
           className={classes.menuButton}
-          color='inherit'
+          color='primary'
           aria-label='menu'
         >
           <MenuIcon />

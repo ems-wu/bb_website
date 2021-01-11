@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 function Footer() {
   const classes = useStyles();
   return (
-    <AppBar position='fixed' className={classes.appBar}>
+    <AppBar position='fixed' style = {{backgroundColor: "#E9AFA3"}} className={classes.appBar}>
       <Typography variant='h6' className={classes.footer}>
         © Copyright 2020
       </Typography>
