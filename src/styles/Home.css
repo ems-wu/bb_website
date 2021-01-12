@@ -1,0 +1,9 @@
+.welcome {
+    background-color: rgb(175, 217, 228);
+    line-height: 1.8;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
