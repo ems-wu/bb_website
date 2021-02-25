@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navigation/Navbar';
-import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import Join from './pages/Join';
 import Team from './pages/Team';
@@ -11,7 +9,6 @@ import Contact from './pages/Contact';
 const App = () => {
     return (
         <BrowserRouter>
-            <Navbar />
             <div>
                 <Switch>
                     <Route exact path="/">
@@ -31,7 +28,6 @@ const App = () => {
                     </Route>
                 </Switch>
             </div>
-            <Footer/>
         </BrowserRouter>
     );
 }
