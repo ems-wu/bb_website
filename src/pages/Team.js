@@ -64,7 +64,7 @@ function Team(props) {
     return (
         <>
         <NavigationBar/>
-        <img src={Header} height='50%' width='100%' style={{opacity: 0.8}}/>
+        <img src={Header} width='100%' style={{opacity: 0.8}}/>
         <Grid container direction="column" className={classes.root}>
             <Grid item className={classes.head1}>
                 <Team_Section title="Executive Board"/>

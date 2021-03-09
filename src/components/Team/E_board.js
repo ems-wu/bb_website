@@ -10,9 +10,10 @@ function E_Board() {
                 <MediaCard 
                     name="Emily ZhouWang"
                     designation="Co-Founder"
-                    linkedin=""
                     image={Emily}
-                    clg="Junior at UC Berkeley"/>
+                    clg="Junior at UC Berkeley"
+                    linkedin="https://linkedin.com/in/neelanshisharma"
+                    description="Emily (a.k.a. Amily) is a 3rd year at UC Berkeley studying Economics and Data Science with a minor in Theater Performance. On campus, she serves as the Director of Professional Development for 180 Degrees Consulting and the Marketing Chair for the Berkeley Finance Club. She is going to Credit Suisse next summer as an Investment Banking Summer Analyst. Outside of school, she’s interested in photography, film production, and Avatar the Last Airbender. Feel free to reach out with any questions!"/>
             </Grid>
             <Grid item xs={6} >
                 <MediaCard 
