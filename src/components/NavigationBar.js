@@ -39,10 +39,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '18px',
       '&:hover': {
         opacity: 0.7,
-      },
-      '&:active': {
-        border: '2px',
-      }
+      }, 
     },
     title: {
       display: 'none',
@@ -72,6 +69,12 @@ const useStyles = makeStyles((theme) => ({
     listitem: {
       paddingTop: '20px',
       paddingBottom: '20px',
+    },
+    active: {
+      borderStyle: 'solid',
+      borderWidth: '0 0 2px 0',
+      borderColor: '#000',
+      paddingBottom: '5px',
     }
   }));
 
@@ -141,7 +144,7 @@ export default function NavigationBar(props) {
     );
 
     const changeBg = () => {
-      if(window.scrollY >= 200) {
+      if(window.scrollY >= 100) {
         setNavbar(true);
       }
       else{
@@ -153,7 +156,7 @@ export default function NavigationBar(props) {
 
     return (
       <>
-        <AppBar elevation="none" style={navbar ? {background: 'white', transition: 'all 0.5s ease'} : {background: 'transparent', transition:'all 0.5s ease'}} >
+        <AppBar elevation={navbar ? 2 : "none"} style={navbar ? {background: 'white', transition: 'all 0.2s ease-in-out'} : {background: 'transparent', transition:'all 0.5s ease'}} >
             <Toolbar>
                 <Typography style={{lineHeight: '20px', marginLeft: '30px', color: 'black', fontWeight: 600, fontSize: '20px'}} variant="body1">
                     Becoming<br/>Businesswomen
@@ -163,19 +166,19 @@ export default function NavigationBar(props) {
 
                 <div className={classes.sectionDesktop}>
                     <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName="active" to="/" exact>Home</NavLink>
+                        <NavLink className={classes.link} activeClassName={classes.active} to="/" exact>Home</NavLink>
                     </button>
                     <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName="active" to="/about" exact>About</NavLink>
+                        <NavLink className={classes.link} activeClassName={classes.active} to="/about" exact>About</NavLink>
                     </button> 
                     <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName="active" to="/our-team" exact>Our Team</NavLink>
+                        <NavLink className={classes.link} activeClassName={classes.active} to="/our-team" exact>Our Team</NavLink>
                     </button>
                     <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName="active" to="/join" exact>Join</NavLink>
+                        <NavLink className={classes.link} activeClassName={classes.active} to="/join" exact>Join</NavLink>
                     </button>
                     <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName="active" to="/contact" exact>Contact</NavLink>
+                        <NavLink className={classes.link} activeClassName={classes.active} to="/contact" exact>Contact</NavLink>
                     </button>
                 </div>
                 <div className={classes.sectionMobile}>

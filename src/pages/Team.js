@@ -11,7 +11,7 @@ import Tech_Team from '../components/Team/Tech_Team';
 import Section_Head from '../components/Team/Section_Head.js';
 import Team_Section from '../components/Team/Team_Section.js';
 import Ambassador from '../components/Team/Ambassadors.js';
-import Header from '../images/home_header.jpg';
+import PageHeaderShort from '../components/Page_Header_Short.js';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -59,12 +59,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Team(props) {
+function Team() {
     const classes=useStyles();
     return (
         <>
         <NavigationBar/>
-        <img src={Header} width='100%' style={{opacity: 0.8}}/>
+        <PageHeaderShort/>
         <Grid container direction="column" className={classes.root}>
             <Grid item className={classes.head1}>
                 <Team_Section title="Executive Board"/>

@@ -1,5 +1,5 @@
 import { Grid } from '@material-ui/core';
-import React from 'react'
+import React from 'react';
 import NavigationBar from '../components/NavigationBar.js';
 import '../styles/Home.css';
 import Footer from '../components/Footer.js';
@@ -10,7 +10,7 @@ const Home = () => {
         <>
         <NavigationBar/>
         <img src={Header} width='100%' style={{opacity: 0.8}}/>
-        <Grid container direction="column">
+        <Grid container direction="column" style={{height: '500px'}}>
             <Grid item container>
                 <Grid item xs={0} sm={2} />
                 <Grid item xs={12} sm={8} >

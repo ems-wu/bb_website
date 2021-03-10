@@ -4,24 +4,24 @@ import NavigationBar from '../components/NavigationBar.js';
 import '../styles/Home.css';
 import Footer from '../components/Footer.js';
 import { makeStyles } from '@material-ui/core/styles';
+import PageHeaderShort from '../components/Page_Header_Short.js';
 
 const About = () => {
     return (
+        <>
+        <NavigationBar/>
+        <PageHeaderShort/>
         <Grid container direction="column">
-            <Grid item>
-                <NavigationBar/>
-            </Grid>
             <Grid item container>
-                <Grid item xs={0} sm={2} />
-                <Grid item xs={12} sm={8} >
+                <Grid item xs={1} />
+                <Grid item xs={10} >
                     About B.B.
                 </Grid>
-                <Grid item xs={0} sm={2} />
-            </Grid>
-            <Grid item>
-                <Footer/>
+                <Grid item xs={1}/>
             </Grid>
         </Grid>
+        <Footer/>
+        </>
     )
 }
 
