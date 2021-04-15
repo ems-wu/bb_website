@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
     },
     head1: {
-        background: '#fc9fb6',
+        background: '#887A88',
         color: 'rgb(255, 255, 255)',
         marginBottom: '20px',
         paddingTop: '40px',
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         } 
     },
     head2: {
-        background: 'rgb(173, 98, 117)',
+        background: '#6B93AB',
         color: 'rgb(255, 255, 255)',
         marginBottom: '60px',
         marginTop: '80px',
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         } 
     },
     head3: {
-        background:  'rgb(181, 196, 255);',
+        background:  '#9EC8BB',
         color: 'rgb(255, 255, 255)',
         marginBottom: '60px',
         marginTop: '80px',

@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: '10px',
       background: 'transparent',
       border: 'none',
-      fontSize: '18px',
+      fontSize: '14px',
       '&:hover': {
         opacity: 0.7,
       }, 
@@ -63,18 +63,20 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     link: {
-      color: 'black',
+      color: '#000',
       textDecoration: 'none',
+      fontFamily: 'Montserrat',
     },
     listitem: {
       paddingTop: '20px',
       paddingBottom: '20px',
+      
     },
     active: {
       borderStyle: 'solid',
-      borderWidth: '0 0 2px 0',
+      borderWidth: '0 0 1px 0',
       borderColor: '#000',
-      paddingBottom: '5px',
+      paddingBottom: '4px',
     }
   }));
 
@@ -156,7 +158,7 @@ export default function NavigationBar(props) {
 
     return (
       <>
-        <AppBar elevation={navbar ? 2 : "none"} style={navbar ? {background: 'white', transition: 'all 0.2s ease-in-out'} : {background: 'transparent', transition:'all 0.5s ease'}} >
+        <AppBar elevation={navbar ? 2 : "none"} style={navbar ? {background: 'white', transition: 'all 0.2s ease-in-out'} : {background: 'transparent', textColor: 'white', transition:'all 0.5s ease'}} >
             <Toolbar>
                 <Typography style={{lineHeight: '20px', marginLeft: '30px', color: 'black', fontWeight: 600, fontSize: '20px'}} variant="body1">
                     Becoming<br/>Businesswomen
