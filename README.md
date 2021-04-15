@@ -5,5 +5,3 @@
 Emily Wu <br />
 Lu Wang <br />
 Neelanshi Sharma <br />
-Soohyun Ahn <br />
-Isabel Abonitalla  <br />
