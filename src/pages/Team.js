@@ -4,14 +4,11 @@ import NavigationBar from '../components/NavigationBar.js';
 import '../styles/Home.css';
 import Footer from '../components/Footer.js';
 import { makeStyles } from '@material-ui/core/styles';
-import E_Board from '../components/Team/E_board';
-import Director from '../components/Team/Director';
-import VP from '../components/Team/VP';
-import Tech_Team from '../components/Team/Tech_Team';
 import Section_Head from '../components/Team/Section_Head.js';
 import Team_Section from '../components/Team/Team_Section.js';
-import Ambassador from '../components/Team/Ambassadors.js';
 import PageHeaderShort from '../components/Page_Header_Short.js';
+import MediaCard from '../components/Team/Card.js';
+import data from '../Team_Data.json';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,67 +58,136 @@ const useStyles = makeStyles((theme) => ({
 
 function Team() {
     const classes=useStyles();
+    document.title = 'Our Team | B.B.';
     return (
         <>
         <NavigationBar/>
         <PageHeaderShort/>
         <Grid container direction="column" className={classes.root}>
-            <Grid item className={classes.head1}>
-                <Team_Section title="Executive Board"/>
-            </Grid>
-            <Grid item>
-                <Section_Head title="Co-Founders/Co-Presidents"/>
-            </Grid>
-            <Grid item container>
-                <Grid item xs={1} sm={1} md={2}/>
-                <Grid item xs={10} sm={10} md={8} align="center">
-                    <E_Board />
-                </Grid>
-                <Grid item xs={1} sm={1} md={2}/>
-            </Grid>
-            <Grid item>
-                <Section_Head title="Directors"/>
-            </Grid>
-            <Grid item container>
-                <Grid item xs={1} sm={1} md={2}/>
-                <Grid item xs={10} sm={10} md={8} align="center">
-                    <Director />
-                </Grid>
-                <Grid item xs={1} sm={1} md={2}/>
-            </Grid>
-            <Grid item>
-                <Section_Head title="Vice Presidents"/>
-            </Grid>
-            <Grid item container>
-                <Grid item xs={1} sm={1} md={2}/>
-                <Grid item xs={10} sm={10} md={8} align="center">
-                    <VP />
-                </Grid>
-                <Grid item xs={1} sm={1} md={2}/>
-            </Grid>
-            <Grid item className={classes.head2}>
-                <Team_Section title="Tech-Team"/>
-            </Grid>
-            <Grid item container>
-                <Grid item xs={1} sm={1} md={2}/>
-                <Grid item xs={10} sm={10} md={8} align="center">
-                    <Tech_Team />
-                </Grid>
-                <Grid item xs={1} sm={1} md={2}/>
-            </Grid>
-            <Grid item className={classes.head3}>
-                <Team_Section title="Ambassadors"/>
-            </Grid>
-            <Grid item container>
-                <Grid item xs={1} sm={1} />
-                <Grid item xs={10} sm={10} align="center">
-                    <Ambassador />
-                </Grid>
-                <Grid item xs={1} sm={1}/>
-            </Grid>
-            <Grid item>
-                <br/><br/><br/>
-            </Grid>
+        {data.pagesections?.map((e)=>{
+            if(e.title==="Ambassadors"){
+                return (
+                    <>
+                    <Grid item className={classes.head3} key={e}>
+                        <Team_Section title={e.title}/>
+                    </Grid>
+                    {e.sections?.map((t)=> {
+                        return(
+                        <Grid item container>
+                            <Grid item xs={1}/>
+                            <Grid container spacing={4} justify="center" item xs={10} align="center">
+                            {t.team?.map((g)=>{
+                                return(
+                                <Grid item xs={6} sm={4} md={3} key={g}>
+                                    <MediaCard 
+                                        name={g.name}
+                                        designation={g.designation}
+                                        image={process.env.PUBLIC_URL + g.image}
+                                        clg={g.clg}
+                                        linkedin={g.linkedin}
+                                        description={g.description}/>
+                                </Grid>
+                                )
+                            })}
+                            </Grid>
+                            <Grid item xs={1}/>
+                        </Grid>
+                        )
+                    })};
+                    </>
+                )
+            }
+                            
+            else if(e.title==="Executive Board") {
+                return (
+                    <>
+                    <Grid item className={classes.head1} key={e}>
+                        <Team_Section title={e.title}/>
+                    </Grid>
+                    {e.sections?.map((t)=> {
+                        return(
+                        <>
+                        <Grid item key={t}>
+                            <Section_Head title={t.title}/>
+                        </Grid>
+                        <Grid item container>
+                            <Grid item xs={1} sm={1} md={2}/>
+                            <Grid container spacing={4} justify="center" item xs={10} sm={10} md={8} align="center">
+                            {t.team?.map((g)=>{
+                                if(t.title==="Co-Founders/Co-Presidents") {
+                                    return (
+                                        <Grid item xs={6} key={g}>
+                                            <MediaCard 
+                                                name={g.name}
+                                                designation={g.designation}
+                                                image={process.env.PUBLIC_URL + g.image}
+                                                clg={g.clg}
+                                                linkedin={g.linkedin}
+                                                description={g.description}/>
+                                        </Grid>
+                                    );
+                                }
+
+                                else {
+                                    return (
+                                        <Grid item xs={6} sm={4} key={g}>
+                                            <MediaCard 
+                                                name={g.name}
+                                                designation={g.designation}
+                                                image={process.env.PUBLIC_URL + g.image}
+                                                clg={g.clg}
+                                                linkedin={g.linkedin}
+                                                description={g.description}/>
+                                        </Grid>
+                                    );
+                                }
+                            })}
+                            </Grid>
+                            <Grid item xs={1} sm={1} md={2}/>
+                        </Grid>
+                        </>
+                        )
+                    })};
+                    </>
+                )
+            }
+
+            else if(e.title==="Tech Team") {
+                return (
+                    <>
+                    <Grid item className={classes.head2} key={e}>
+                        <Team_Section title={e.title}/>
+                    </Grid>
+                    {e.sections?.map((t)=> {
+                        return(
+                        <Grid item container>
+                            <Grid item xs={1} sm={1} md={2}/>
+                            <Grid container spacing={4} justify="center" item xs={10} sm={10} md={8} align="center">
+                            {t.team?.map((g)=>{
+                                return(
+                                <Grid item xs={6} sm={4} key={g}>
+                                    <MediaCard 
+                                        name={g.name}
+                                        designation={g.designation}
+                                        image={process.env.PUBLIC_URL + g.image}
+                                        clg={g.clg}
+                                        linkedin={g.linkedin}
+                                        description={g.description}/>
+                                </Grid>
+                                )
+                            })}
+                            </Grid>
+                            <Grid item xs={1} sm={1} md={2}/>
+                        </Grid>
+                        )
+                    })}
+                    </>
+                )
+            }
+        })}
+        </Grid>
+        <Grid item>
+            <br/><br/><br/>
         </Grid>
         <Footer/>
         </>

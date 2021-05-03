@@ -56,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('md')]: {
             width: '50%',
         },
+        "&:hover": {
+            background: 'white',
+            color: 'black',
+        }
     }
 }));
 

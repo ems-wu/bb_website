@@ -19,6 +19,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
+import navopts from '../Navigation_Data.json';
 
 const useStyles = makeStyles((theme) => ({
     list: {
@@ -104,41 +105,18 @@ export default function NavigationBar(props) {
         onKeyDown={toggleDrawer(anchor, false)}
       >
         <List>
-          <NavLink className={classes.link} activeClassName="active" to="/" exact>
-            <ListItem button className={classes.listitem}>
-              <ListItemIcon><HomeIcon /></ListItemIcon>
-              <ListItemText>Home</ListItemText>
-            </ListItem>
-          </NavLink>
-          <Divider />
-          <NavLink className={classes.link} activeClassName="active" to="/about" exact>
-            <ListItem button className={classes.listitem}>
-              <ListItemIcon><InfoIcon /></ListItemIcon>
-              <ListItemText>About</ListItemText>
-            </ListItem>
-          </NavLink>
-          <Divider />
-          <NavLink className={classes.link} activeClassName="active" to="/our-team" exact>
-            <ListItem button className={classes.listitem}>
-              <ListItemIcon><GroupIcon /></ListItemIcon>
-              <ListItemText>Our Team</ListItemText>
-            </ListItem>
-          </NavLink>
-          <Divider />
-          <NavLink className={classes.link} activeClassName="active" to="/join" exact>
-            <ListItem button className={classes.listitem}>
-              <ListItemIcon><PersonAddIcon /></ListItemIcon>
-              <ListItemText>Join</ListItemText>
-            </ListItem>
-          </NavLink>
-          <Divider />
-          <NavLink className={classes.link} activeClassName="active" to="/contact" exact>
-            <ListItem button className={classes.listitem}>
-              <ListItemIcon><MailIcon /></ListItemIcon>
-              <ListItemText>Contact</ListItemText>
-            </ListItem>
-          </NavLink>
-          <Divider/>
+          {navopts.navbar.map((e) => {
+            return(
+              <>
+              <NavLink className={classes.link} activeClassName="active" to={e.to} exact>
+                <ListItem button className={classes.listitem}>
+                  <ListItemText>{e.label}</ListItemText>
+                </ListItem>
+              </NavLink>
+              <Divider />
+              </>
+            );
+          })}
         </List>
       </div>
     );
@@ -165,21 +143,13 @@ export default function NavigationBar(props) {
                 <div className={classes.grow} />
 
                 <div className={classes.sectionDesktop}>
-                    <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName={classes.active} to="/" exact>Home</NavLink>
-                    </button>
-                    <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName={classes.active} to="/about" exact>About</NavLink>
-                    </button> 
-                    <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName={classes.active} to="/our-team" exact>Our Team</NavLink>
-                    </button>
-                    <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName={classes.active} to="/join" exact>Join</NavLink>
-                    </button>
-                    <button className={classes.menuButton} color="inherit" >
-                        <NavLink className={classes.link} activeClassName={classes.active} to="/contact" exact>Contact</NavLink>
-                    </button>
+                  {navopts.navbar.map((e) => {
+                    return (
+                      <button className={classes.menuButton} color="inherit" >
+                        <NavLink className={classes.link} activeClassName={classes.active} to={e.to} exact>{e.label}</NavLink>
+                      </button>  
+                    )
+                  })}
                 </div>
                 <div className={classes.sectionMobile}>
                     <Button onClick={toggleDrawer('right', true)}><MenuIcon/></Button>
@@ -187,9 +157,8 @@ export default function NavigationBar(props) {
                       anchor='right'
                       open={state['right']}
                       onClose={toggleDrawer('right', false)}
-                      onOpen={toggleDrawer('right', true)}
-                    >
-                      {list('right')}
+                      onOpen={toggleDrawer('right', true)}>
+                        {list('right')}
                     </SwipeableDrawer>
                 </div>
             </Toolbar>

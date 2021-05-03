@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import NavigationBar from '../components/NavigationBar.js';
 import '../styles/Home.css';
 import Footer from '../components/Footer.js';
 import PageHeaderShort from '../components/Page_Header_Short.js';
-import { Grid, Typography, withStyles } from '@material-ui/core';
+import { Grid, makeStyles, Typography } from '@material-ui/core';
 import JoinCard from '../components/JoinUs/Join_Card.js';
 
-const useStyles = theme => ({
+const useStyles = makeStyles((theme) => ({
     head1: {
         color: 'black',
         marginBottom: '20px',
@@ -21,12 +21,11 @@ const useStyles = theme => ({
             paddingRight: '10%',
         } 
     },
-});
+}));
 
-class Join extends Component {
-
-    render(){
-        const { classes } = this.props;
+function Join() {
+    document.title = 'Join Us | B.B.';
+    const classes = useStyles();
         
         return (
             <>
@@ -50,8 +49,7 @@ class Join extends Component {
             </Grid>
             <Footer/>
             </>
-        )
-    };
+    )
 }
 
-export default withStyles(useStyles)(Join)
+export default Join

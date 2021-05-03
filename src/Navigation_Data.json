@@ -1,0 +1,56 @@
+{
+    "navbar": [
+        { 
+            "label": "Home",
+            "to": "/"
+        },
+        { 
+            "label": "About Us",
+            "to": "/about"
+        },
+        { 
+            "label": "Our Team",
+            "to": "our-team/"
+        },
+        { 
+            "label": "Join",
+            "to": "/join"
+        },
+        { 
+            "label": "Contact",
+            "to": "/contact"
+        }
+    ],
+    "footer": [
+        {
+            "label": "Privacy",
+            "to": "/privacy"
+        },
+        {
+            "label": "F.A.Q",
+            "to": "/faq"
+        },
+        {
+            "label": "Terms & Conditions",
+            "to": "/tandc"
+        },
+        {
+            "label": "Contact Us",
+            "to": "/contact"
+        }
+    ],
+    "social_media_icons": [
+        {
+            "name": "Facebook",
+            "link": "https://www.facebook.com/becomingbusinesswomen"
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/becomingbusinesswomen"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/company/becoming-businesswomen"
+        }
+    ]
+}

@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import PageHeaderShort from '../components/Page_Header_Short.js';
 
 const About = () => {
+    document.title = 'About Us | B.B.';
     return (
         <>
         <NavigationBar/>

@@ -1,0 +1,234 @@
+{
+    "pagesections": [
+        {
+            "title": "Executive Board",
+            "sections": [
+                {
+                    "title": "Co-Founders/Co-Presidents",
+                    "team": [
+                        {
+                            "name": "Emily ZhouWang",
+                            "designation": "Co-Founder",
+                            "image": "/sample_image.jpg",
+                            "clg": "Junior at UC Berkeley",
+                            "linkedin": "",
+                            "description": "Emily (a.k.a. Amily) is a 3rd year at UC Berkeley studying Economics and Data Science with a minor in Theater Performance. On campus, she serves as the Director of Professional Development for 180 Degrees Consulting and the Marketing Chair for the Berkeley Finance Club. She is going to Credit Suisse next summer as an Investment Banking Summer Analyst. Outside of school, she’s interested in photography, film production, and Avatar the Last Airbender. Feel free to reach out with any questions!"
+                        },
+                        {
+                            "name": "Kathleen Kong",
+                            "designation": "Co-Founder",
+                            "image": "/sample_image.jpg",
+                            "clg": "Junior at UC Berkeley",
+                            "linkedin": "",
+                            "description": "Emily (a.k.a. Amily) is a 3rd year at UC Berkeley studying Economics and Data Science with a minor in Theater Performance. On campus, she serves as the Director of Professional Development for 180 Degrees Consulting and the Marketing Chair for the Berkeley Finance Club. She is going to Credit Suisse next summer as an Investment Banking Summer Analyst. Outside of school, she’s interested in photography, film production, and Avatar the Last Airbender. Feel free to reach out with any questions!"
+                        }
+                    ]
+                },
+                {
+                    "title": "Directors",
+                    "team": [
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Mina Han",
+                            "designation": "Director of Marketing",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        }
+                    ]
+                },
+                {
+                    "title": "Vice Presidents",
+                    "team":  [
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Mina Han",
+                            "designation": "Director of Marketing",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Tech Team",
+            "sections": [
+                {
+                    "title": null,
+                    "team": [
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ambassadors",
+            "sections": [
+                {
+                    "title": null,
+                    "team": [
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Mina Han",
+                            "designation": "Director of Marketing",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Mina Han",
+                            "designation": "Director of Marketing",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Jessica Li",
+                            "designation": "Director of Banking - Sell Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Cara Nguyen",
+                            "designation": "Director of Banking - Buy-Side",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Madelyn Wells",
+                            "designation": "Director of Consulting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Emily Lai",
+                            "designation": "Director of Accounting",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        },
+                        {
+                            "name": "Mina Han",
+                            "designation": "Director of Marketing",
+                            "linkedin": "",
+                            "image": "/sample_image.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
