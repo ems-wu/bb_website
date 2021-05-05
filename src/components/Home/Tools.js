@@ -92,15 +92,15 @@ const useStyles = makeStyles ((theme) => ({
 }));
  
 function Tools(props) {
-    const {number, image, desc, buttonText}=props;
+    const {number, image, desc, buttonText, to}=props;
     if(number)
-        return <Tools1 image={image} desc={desc} buttonText={buttonText}/>;
+        return <Tools1 image={image} desc={desc} buttonText={buttonText} to={to}/>;
     else 
-        return <Tools2 image={image} desc={desc} buttonText={buttonText}/>;
+        return <Tools2 image={image} desc={desc} buttonText={buttonText} to={to}/>;
 }
 
 function Tools1(props) {
-    const {image, desc, buttonText} = props;
+    const {image, desc, buttonText, to} = props;
     const classes = useStyles();
     return (
         <Grid container className={classes.root}> 
@@ -110,7 +110,7 @@ function Tools1(props) {
             <Grid item xs={6} align='center'>
                 <Paper square className={classes.paper} elevation='none'>
                     <Typography className={classes.text}>{desc}</Typography>
-                    <Button className={classes.button}>{buttonText}</Button>
+                    <Button className={classes.button} href={to}>{buttonText}</Button>
                 </Paper>
             </Grid>
         </Grid>
@@ -118,7 +118,7 @@ function Tools1(props) {
 }
 
 function Tools2(props) {
-    const {image, desc, buttonText} = props;
+    const {image, desc, buttonText, to} = props;
     
     const classes = useStyles();
     return (
@@ -126,7 +126,7 @@ function Tools2(props) {
             <Grid item xs={6} align='center'>
                 <Paper square className={classes.paper} elevation='none'>
                     <Typography className={classes.text}>{desc}</Typography>
-                    <Button className={classes.button}>{buttonText}</Button>
+                    <Button className={classes.button} href={to}>{buttonText}</Button>
                 </Paper>
             </Grid>
             <Grid item xs={6} align='center'>

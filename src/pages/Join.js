@@ -41,10 +41,18 @@ function Join() {
             </div>
             <Grid container>
                 <Grid item xs={12} sm={6} align="center">
-                    <JoinCard icon='0' head='0' desc='0' buttonText='0'/>
+                    <JoinCard icon='0' 
+                        head="Become A Member" 
+                        desc="Sign up here to become a general member by filling out our google form below:" 
+                        buttonText="Membership Signup" 
+                        toLink="https://docs.google.com/forms/d/e/1FAIpQLSflicN3vOHjgBd9C0C3FvDg0USSVJsCXpL0KECZbXCtbQ5ghA/viewform"/>
                 </Grid>
                 <Grid item xs={12} sm={6} align="center">
-                    <JoinCard icon='1' head='1' desc='1' buttonText='1'/>
+                    <JoinCard icon='1' 
+                        head="Join Our Facebook Group" 
+                        desc="After becoming a member, hop over to our Facebook group ​to introduce yourself and ask questions!" 
+                        buttonText="Facebook Group"
+                        toLink="https://www.facebook.com/groups/192044672089632/about/"/>
                 </Grid>
             </Grid>
             <Footer/>

@@ -65,6 +65,7 @@ function Team() {
         <PageHeaderShort/>
         <Grid container direction="column" className={classes.root}>
         {data.pagesections?.map((e)=>{
+            /* display four cards in Ambassadors section */
             if(e.title==="Ambassadors"){
                 return (
                     <>
@@ -97,7 +98,8 @@ function Team() {
                     </>
                 )
             }
-                            
+            
+            /* display three cards in Executive Board section */
             else if(e.title==="Executive Board") {
                 return (
                     <>
@@ -114,6 +116,7 @@ function Team() {
                             <Grid item xs={1} sm={1} md={2}/>
                             <Grid container spacing={4} justify="center" item xs={10} sm={10} md={8} align="center">
                             {t.team?.map((g)=>{
+                                {/* display two cards in this section */}
                                 if(t.title==="Co-Founders/Co-Presidents") {
                                     return (
                                         <Grid item xs={6} key={g}>
@@ -152,6 +155,7 @@ function Team() {
                 )
             }
 
+            /* display three cards in Tech Team section */
             else if(e.title==="Tech Team") {
                 return (
                     <>

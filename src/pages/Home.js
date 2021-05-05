@@ -1,4 +1,4 @@
-import { Button, Grid, Typography, makeStyles, Paper } from '@material-ui/core';
+import { Button, Typography, makeStyles, Paper } from '@material-ui/core';
 import React from 'react';
 import NavigationBar from '../components/NavigationBar.js';
 import '../styles/Home.css';
@@ -8,28 +8,29 @@ import { Person } from '@material-ui/icons';
 import OurFocus from '../components/Home/OurFocus.js';
 import Tools from '../components/Home/Tools.js';
 import event from '../images/events.png';
+import Carousels from '../components/Home/Carousels.js';
 
 const tools=[
     {
         number: true,
         pic: event, 
         desc: "A supportive network of female students and professionals in fields from accounting, banking, consulting and more",
-        buttonText: "Join Us"
-    
+        buttonText: "Join Us",
+        to: "https://docs.google.com/forms/d/e/1FAIpQLSflicN3vOHjgBd9C0C3FvDg0USSVJsCXpL0KECZbXCtbQ5ghA/viewform"
     },
     {
         number: false,
         pic: event, 
         desc: "Access to a facebook group where you can meet and learn about student opportunities, meet new people and ask for advice",
-        buttonText: "Check it out"
-    
+        buttonText: "Check it out",
+        to: "https://www.facebook.com/groups/192044672089632/about/"
     },
     {
         number: true,
         pic: event, 
         desc: "Invitations to webinars focused on topics such as professional development, career explorations, and women in leadership",
-        buttonText: "Let's go"
-    
+        buttonText: "Let's go",
+        to: "./about"
     },
   ]
 
@@ -117,7 +118,7 @@ const Home = () => {
 
         {/* HEADER */}
         <div style={{position: 'relative'}}>
-            <img width='100%' src={Header} style={{opacity: 0.7, height: '100%'}}/>
+            <img width='100%' src={Header} style={{opacity: 0.7, height: '100%'}} alt=""/>
             <div className={classes.content}>
                 <Typography variant="h1" className={classes.name}>
                     Becoming<br/>Businesswomen
@@ -160,30 +161,18 @@ const Home = () => {
             </Typography>
             {tools.map((e)=>{
                 return (
-                    <Tools number={e.number} image={e.pic} desc={e.desc} buttonText={e.buttonText}/>
+                    <Tools number={e.number} image={e.pic} desc={e.desc} buttonText={e.buttonText} to={e.to}/>
                 );
             })}
         </div>
 
 
-        {/* OUR EVENTS Section */} 
-        <div style={{height: '100%', padding: '5%'}}>
-        <Grid container justify='center' alignItems='center'>
-                <Grid item xs={7} align="center">
-                    <img src={event} width='100%'/>
-                </Grid>
-                <Grid item xs={5} align="center">
-                    <Button className={classes.joinus} style={{background: 'white', color: 'rgb(0, 13, 65)', width: '50%', borderColor: 'rgb(0, 13, 65)'}}>Our Events</Button>
-                </Grid>
-            </Grid> 
-        </div>
-
-
         {/* FOLLOW OUR INSTAGRAM Section */}
-        <div style={{height: '100%', background: 'rgb(170, 217, 245)', paddingBottom: '10%'}}>
+        <div style={{height: '100%', paddingBottom: '10%'}}>
             <Typography variant="h2" className={classes.head1} style={{paddingTop: '5%', paddingBottom: '3%', color: 'black', textAlign: 'center', fontWeight: 'bold'}}>
                 Follow Our Instagram!
             </Typography>
+            <Carousels/>
             {/*<img src={Insta} style={{width: '700px',}}/> */}
         </div>
 

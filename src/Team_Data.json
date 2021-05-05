@@ -31,13 +31,17 @@
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
@@ -49,13 +53,17 @@
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Mina Han",
                             "designation": "Director of Marketing",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         }
                     ]
                 },
@@ -66,31 +74,41 @@
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
                             "designation": "Director of Consulting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Mina Han",
                             "designation": "Director of Marketing",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         }
                     ]
                 }
@@ -106,25 +124,33 @@
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
                             "designation": "Director of Consulting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         }
                     ]
                 }
@@ -140,91 +166,121 @@
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
                             "designation": "Director of Consulting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Mina Han",
                             "designation": "Director of Marketing",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
                             "designation": "Director of Consulting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Mina Han",
                             "designation": "Director of Marketing",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Jessica Li",
                             "designation": "Director of Banking - Sell Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Cara Nguyen",
                             "designation": "Director of Banking - Buy-Side",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Madelyn Wells",
                             "designation": "Director of Consulting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Emily Lai",
                             "designation": "Director of Accounting",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         },
                         {
                             "name": "Mina Han",
                             "designation": "Director of Marketing",
                             "linkedin": "",
-                            "image": "/sample_image.jpg"
+                            "image": "/sample_image.jpg",
+                            "clg": "",
+                            "description": ""
                         }
                     ]
                 }
